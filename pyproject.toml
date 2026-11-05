@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inventory-api"
+version = "0.1.0"
+description = "Track products, stock movements, reservations and purchase orders over a small HTTP API."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "jesuswork60-create" }]
+dependencies = []
+
+[project.scripts]
+inventory-api = "inventory_api.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
